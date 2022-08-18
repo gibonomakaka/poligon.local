@@ -27,7 +27,6 @@ Github генерация access token
 - правый верхний угол экрана опции аккаунта - Settings - Developer settings - Personal access token - 
 Generate new token
 
-
 Добавление на Github
 git remote add origin https://github.com/gibonomakaka/poligon.local.git
 git branch -M main
@@ -35,3 +34,6 @@ git push -u origin main
 
 Получение изменений с github:
 git pull origin main
+
+origin - URL проекта на github
+main - имя ветки (branch). Может быть любым.
