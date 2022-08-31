@@ -17,7 +17,7 @@ class CreateBlogCategoriesTable extends Migration
             $table->increments('id');
 
             // ID родительской ктегории.
-            $table->integer('parent_id')->unsigned()->default(0);
+            $table->integer('parent_id')->unsigned()->default(1);
 
             // Название категории в транслите title для создания человекопонятного URL
             $table->string('slug')->unique();
@@ -36,7 +36,7 @@ class CreateBlogCategoriesTable extends Migration
             $table->softDeletes();
 
             //Связь с таблицей 'blog_categories'
-            $table->foreign('parent_id')->references('id')->on('blog_categories');
+//            $table->foreign('parent_id')->references('id')->on('blog_categories');
         });
     }
 
