@@ -93,18 +93,6 @@ class CategoryController extends BaseController
 //    public function update(Request $request, $id)
     public function update(BlogCategoryUpdateRequest $request, $id)
     {
-//        $rules = [
-//            'title' => 'required|min:5|max:200',
-//            'slug' => 'max:200',
-//            'description' => 'string|min:3|max:200',
-//            'parent_id' => 'required|integer|exists:blog_categories,id',
-//        ];
-
-//        $validatedData = $this->validate($request, $rules);
-//        $validatedData = $request->validate($rules);
-
-//        dd($validatedData);
-
         $item = BlogCategory::find($id);
 
         if (empty($item))
@@ -121,7 +109,7 @@ class CategoryController extends BaseController
             $data['slug'] = str_slug($data['title']);
         }
 
-        $result = $item->fill($data)->save();
+        $result = $item->update($data);
 
         if ($result)
         {
