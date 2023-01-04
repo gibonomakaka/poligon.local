@@ -4,6 +4,7 @@
         <div class="card">
             <div class="card-body">
                 <button type="submit" class="btn btn-primary">Сохранить</button>
+                <a href="{{route('blog.admin.categories.index')}}" class="btn btn-primary">К списку</a>
             </div>
         </div>
     </div>
