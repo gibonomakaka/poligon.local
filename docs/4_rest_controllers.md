@@ -11,7 +11,7 @@ php artisan route:list
 php artisan:make:controller Blog/BaseController
 
 4.Контроллер статей блога
-php artisan:make controller Blog/PostController --resource
+php artisan:make controller Blog/PostController --resource (-r)
 
 Пояснение:
 1. Для каждого раздела сайта, например: Blog, Shop и т.д заводится отдельная папка (пространство) для разделения
