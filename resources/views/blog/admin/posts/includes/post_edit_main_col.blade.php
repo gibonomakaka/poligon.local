@@ -26,7 +26,7 @@
                     <div class="tab-pane active" id="maindata" role="tabpanel">
                         <div class="form-group">
                             <label for="title">Заголовок</label>
-                            <input type="text" name="title" id="title" class="form-control" minlength="3" required
+                            <input type="text" name="title" id="title" class="form-control" minlength="3"
                                    value="{{$item->title}}">
                         </div>
                         <div class="form-group">
@@ -60,7 +60,7 @@
                         <div class="form-check">
                             <input type="hidden" name="is_published" value="0">
                             <input type="checkbox" name="is_published" class="form-check-input"
-                                   value="{{$item->is_published}}" @if($item->is_published) checked @endif>
+                                   value="1" @if($item->is_published) checked @endif>
                             <label for="is_published" class="form-check-label">Опубликовано</label>
                         </div>
                     </div>
